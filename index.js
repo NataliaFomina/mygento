@@ -5,7 +5,7 @@ if (window.matchMedia('screen and (min-width: 481px)').matches) {
   document.addEventListener('scroll', onScroll);
   function onScroll() {
     const nav = document.querySelector('.nav__container')
-    if (window.pageYOffset >= h -150) {
+    if (window.pageYOffset >= computedStyle -150) {
       nav.classList.add('changed')
     } else {
       nav.classList.remove('changed')
